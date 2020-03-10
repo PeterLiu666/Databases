@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editText_name_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/name"
+        app:layout_constraintBottom_toTopOf="@+id/textView_clumsiness_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/name" />
+
+    <EditText
+        android:id="@+id/editText_money_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button_save_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_money_detail"
+        tools:text="Money Owed" />
+
+    <TextView
+        android:id="@+id/textView_clumsiness_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clumsiness"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar_clumsiness_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_name_detail" />
+
+    <SeekBar
+        android:id="@+id/seekBar_clumsiness_detail"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="108dp"
+        android:layout_height="14dp"
+        android:max="10"
+        app:layout_constraintBottom_toTopOf="@+id/textView_awesome_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_clumsiness_detail" />
+
+    <TextView
+        android:id="@+id/textView_awesome_detail"
+        android:layout_width="76dp"
+        android:layout_height="25dp"
+        android:text="Awesome"
+        app:layout_constraintBottom_toTopOf="@+id/switch_awesome_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_clumsiness_detail" />
+
+    <Switch
+        android:id="@+id/switch_awesome_detail"
+        android:layout_width="60dp"
+        android:layout_height="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_gym_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_awesome_detail" />
+
+    <TextView
+        android:id="@+id/textView_gym_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gym Frequency"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar_gym_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_awesome_detail" />
+
+    <SeekBar
+        android:id="@+id/seekBar_gym_detail"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="108dp"
+        android:layout_height="14dp"
+        android:max="14"
+        app:layout_constraintBottom_toTopOf="@+id/textView_trust_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_gym_detail" />
+
+    <TextView
+        android:id="@+id/textView_trust_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trustworthiness"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar_trust_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar_gym_detail" />
+
+    <RatingBar
+        android:id="@+id/ratingBar_trust_detail"
+        style="@style/Widget.AppCompat.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        app:layout_constraintBottom_toTopOf="@+id/textView_money_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_trust_detail" />
+
+    <TextView
+        android:id="@+id/textView_money_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Money Owed"
+        app:layout_constraintBottom_toTopOf="@+id/editText_money_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar_trust_detail" />
+
+    <Button
+        android:id="@+id/button_save_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_money_detail" />
+</androidx.constraintlayout.widget.ConstraintLayout>
